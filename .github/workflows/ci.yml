@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: run test
-        run: cd ./projet && npm test
+        run: npm test
