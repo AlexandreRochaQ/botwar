@@ -1,5 +1,5 @@
 import express from 'express';
-import decideMove from './bot';
+import decideMove from './bot.js';
 
 const app = express();
 app.use(express.json());
