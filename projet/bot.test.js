@@ -1,4 +1,4 @@
-import { decideMove } from './bot';
+import decideMove from "./bot";
 
 describe('Décision du bot', () => {
     test("retourne un objet avec move et action", () => {
