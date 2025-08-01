@@ -9,14 +9,14 @@ describe('Décision du bot', () => {
     });
 
     test("move est une direction valide", () => {
-        const directions = ["UP", "DOWN", "LEFT", "RIGHT"];
-        const state = {};n
+        const directions = ["UP", "DOWN", "LEFT", "RIGHT", "STAY"];
+        const state = {};
         const decision = decideMove(state);
         expect(directions).toContain(decision.move);
     });
 
     test("action est une action valide", () => {
-        const actions = ["ATTACK", "DEFEND", "MOVE", "WAIT"];
+        const actions = ["COLLECT", "ATTACK", "BOMB", "NONE"];
         const state = {};
         const decision = decideMove(state);
         expect(actions).toContain(decision.action);
