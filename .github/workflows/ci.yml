@@ -4,11 +4,11 @@ on:
   push:
     branches: [master]
 
-jobs: 
-    build:
-        runs-on: ubuntu-latest
-    
-        steps:
-        - uses: actions/checkout@v2
-        - name: run test
-          run: cd ./projet && npm  test
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: run test
+        run: cd ./projet && npm test
